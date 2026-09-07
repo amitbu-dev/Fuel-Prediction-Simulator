@@ -1,0 +1,25 @@
+[project]
+name = "nanogridx-fuel-prediction"
+version = "0.1.0"
+description = "PoC simulator estimating days until fuel drops below a configured threshold."
+requires-python = ">=3.12"
+dependencies = ["numpy", "pandas", "matplotlib"]
+
+[project.optional-dependencies]
+dev = ["pytest", "pytest-cov"]
+notebook = ["jupyterlab", "notebook", "ipykernel"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-q"
+
+[tool.black]
+line-length = 100
+target-version = ["py312"]
+
+[tool.isort]
+profile = "black"
+line_length = 100
+
+[tool.ruff]
+line-length = 100
