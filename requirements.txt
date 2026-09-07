@@ -1,0 +1,9 @@
+# Binder / repo2docker environment for fuel_prediction_poc.ipynb
+#
+# Pinned to the versions the notebook's stored outputs were produced with.
+# fuelsim is imported from the repository root alongside the notebook, so it
+# needs no install step here.
+
+numpy==2.5.2
+pandas==3.0.5
+matplotlib==3.11.1
